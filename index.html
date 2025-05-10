@@ -10,12 +10,14 @@
     <divc class="container">
         <h1>Boas vindas</h1>
         <p>Personalizando saudação em JS</p>
-        <div class="saudacao" >Olá, visitante</div>
+        <div class="saudacao" id="mensagemSaudacao">Olá, visitante</div>
+        <button onclick="changeName()" >personalizar saudação</button>
     </div>
         <script>
-            let nome = "Gabriel"
-            document.getElementById("ola").textContent = "Ola mundo"
-            document.getElementById("nameUser").textContent = "Ola " + nome
+            function changeName(){
+                let nome = "Gabriel"
+                    document.getElementById("mensagemSaudacao").textContent = nome + " carriel"
+            }
         </script>
 </body>
 </html>
